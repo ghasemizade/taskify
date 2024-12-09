@@ -23,7 +23,7 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      locale: Locale('fa'), // تنظیم زبان فارسی
+      locale: Locale('fa'),
       supportedLocales: [Locale('fa')],
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
       debugShowCheckedModeBanner: false,
