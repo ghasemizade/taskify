@@ -56,10 +56,10 @@ class _TaskWidgetState extends State<TaskWidget> {
       children: [
         Expanded(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Transform.scale(
                     scale: 1.4,
@@ -75,12 +75,31 @@ class _TaskWidgetState extends State<TaskWidget> {
                       onChanged: (isChecked) {},
                     ),
                   ),
-                  Text(widget.task.title)
+                  Flexible(
+                    child: Container(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Text(
+                          overflow: TextOverflow.ellipsis,
+                          widget.task.title,
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.w600),
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
-              Text(
-                widget.task.subTitle,
-                overflow: TextOverflow.ellipsis,
+              Flexible(
+                child: Container(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40),
+                    child: Text(
+                      overflow: TextOverflow.ellipsis,
+                      widget.task.subTitle,
+                    ),
+                  ),
+                ),
               ),
               Spacer(),
               getTimeAndEditBadgs()

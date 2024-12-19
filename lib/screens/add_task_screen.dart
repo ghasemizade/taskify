@@ -97,7 +97,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                     decoration: InputDecoration(
                       contentPadding:
                           EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-                      labelText: 'عنوان تسک',
+                      labelText: 'توضیحات',
                       labelStyle: TextStyle(
                         fontSize: 20,
                         color: watcher2.hasFocus

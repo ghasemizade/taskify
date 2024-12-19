@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Row(
                           children: [
                             Text(
-                              'سلام، ',
+                              'سلام ',
                               style: TextStyle(fontSize: 18),
                             ),
                             Text(

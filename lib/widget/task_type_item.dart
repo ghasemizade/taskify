@@ -18,10 +18,9 @@ class TaskTypeItemList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: (selectedItemList == index) ? Color(0xff3C8DFF) : Colors.white,
-          // border: Border.all(
-          //     color: (selectedItemList == index) ? Colors.green : Colors.grey,
-          //     width: (selectedItemList == index) ? 3 : 2),
+          color: (selectedItemList == index)
+              ? Color.fromARGB(169, 60, 141, 255)
+              : Colors.white,
           borderRadius: BorderRadius.all(Radius.circular(10))),
       margin: EdgeInsets.all(8),
       width: 120,
